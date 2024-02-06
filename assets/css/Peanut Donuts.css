@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Peanut Donuts';
+	src: url(../../assets/fonts/PeanutDonutsRegular.woff2) format('woff2'),
+	url(../../assets/fonts/PeanutDonutsRegular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
