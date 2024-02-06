@@ -2,9 +2,10 @@
 
 require_once 'php/DatalinkSofab.php';
 require_once 'php/Templates.php';
+require_once 'php/conf/config.php';
 
-$url = "";
-$token = "";
+$url = URL;
+$token = TOKEN;
 
 $datalink = new DatalinkSofab($url, $token);
 

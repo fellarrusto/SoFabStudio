@@ -24,7 +24,5 @@ class DatalinkSofab extends HyQuery {
         $result = $this->sendQuery($query);
         return $result["data"]["collaborators"];
     }
-    
-
 
 }
