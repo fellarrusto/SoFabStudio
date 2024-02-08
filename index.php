@@ -1,22 +1,12 @@
 <?php
 
-require_once 'php/DatalinkSofab.php';
-require_once 'php/Templates.php';
+require_once 'php/Collaborators.php';
 require_once 'php/conf/config.php';
 
 $url = URL;
 $token = TOKEN;
 
-$datalink = new DatalinkSofab($url, $token);
-
-
-/* Caricamento dati */
-$collaborators = [];
-try {
-    $collaborators = $datalink->getCollaborators();
-} catch (Exception $e) {
-    echo "Si è verificato un errore: " . $e->getMessage();
-}
+$collaborators = new Collaborators($url, $token);
 ?>
 
 <!DOCTYPE html>
@@ -106,9 +96,7 @@ try {
         <div class="row gy-4 row-cols-2 row-cols-md-4">
 
             <?php
-                foreach ($collaborators as $collaborator) {
-                    echo getColaboratorTemplate($collaborator["name"], $collaborator["jobTitle"], $collaborator["foto"]["url"], $collaborator["url"]);
-                }
+                $collaborators->render();
             ?>
             
         </div>

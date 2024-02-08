@@ -1,6 +1,6 @@
 <?php
 
-class HyQuery {
+class BaseComponent {
     private $url;
     private $token;
 
