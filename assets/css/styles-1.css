@@ -1,6 +1,6 @@
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: #FBECE2 !important;
+  background-color: #FFB900!important;
 }
 
 .card {
@@ -55,6 +55,10 @@
   /*text-align: center !important;*/
 }
 
+.d-flex {
+  display: inline;
+}
+
 .btn:hover {
   /*color: var(--bs-btn-hover-color);*/
   background-color: #FFB0B5 !important;
@@ -72,76 +76,3 @@
   border: 4px inset #FFB0B5 !important;
 }
 
-.p-3 {
-  align-items: center !important;
-}
-
-.text-nowrap {
-  white-space: nowrap!important;
-  padding: 5px!important;
-  padding-left: 10px !important;
-}
-
-.list-inline {
-  /*padding-bottom: 15px !important;*/
-  padding-left: 0;
-  list-style: none;
-}
-
-.rounded {
-  border-radius: 18px !important;
-}
-
-.marquee {
-  white-space: nowrap;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.marquee-text {
-  display: inline-block;
-  animation: marquee 3s linear infinite;
-}
-
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-25%); }
-}
-
-::-webkit-scrollbar
-{
-  width: 10px;  /* for vertical scrollbars */
-  height: 12px; /* for horizontal scrollbars */
-}
-
-::-webkit-scrollbar-track
-{
-  background: rgba(0, 0, 0, 0.1);
-}
-
-::-webkit-scrollbar-thumb
-{
-  background: rgba(0, 0, 0, 0.5);
-}
-
-
-/* Nascondi la scrollbar su dispositivi con larghezza inferiore a 768px */
-@media (max-width: 768px) {
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
-  body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-}
-
-
-.collaborators-text{
-  font-family: 'Space Grotesk', sans-serif;
-}
-
-.collaborators-text-small{
-  font-size: 10pt;
-}

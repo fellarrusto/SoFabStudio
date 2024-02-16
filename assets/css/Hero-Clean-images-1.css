@@ -1,0 +1,8 @@
+.fit-cover {
+  object-fit: cover;
+}
+
+.text-uppercase {
+  text-transform: lowercase!important;
+}
+
