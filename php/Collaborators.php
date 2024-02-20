@@ -67,7 +67,7 @@ class Collaborators extends BaseComponent {
       $id = isset($collaborator["id"]) ? $collaborator["id"] : "";
       $name = isset($collaborator["name"]) ? $collaborator["name"] : "";
       $jobTitle = isset($collaborator["jobTitle"]) ? $collaborator["jobTitle"] : "";
-      $fotoUrl = isset($collaborator["foto"]["url"]) ? $collaborator["foto"]["url"] : "assets/img/placeholder_avatar.jpg";
+      $fotoUrl = isset($collaborator["foto"]["url"]) ? $collaborator["foto"]["url"] : "assets/img/placeholder_avatar.png";
       $url = isset($collaborator["url"]["html"]) ? $collaborator["url"]["html"] : "";
   
       echo $this->getTemplate($id, $name, $jobTitle, $fotoUrl, $url);

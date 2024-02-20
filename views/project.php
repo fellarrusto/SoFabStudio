@@ -22,28 +22,36 @@ $projectdata = new ProjectData($url, $token, $projectname);
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title><?php echo $projectdata->getData()["nome"] ?> - So Fab Studio - Comunicazione &amp; Social Media</title>
+    <title><?php echo $projectdata->getData()["nome"] ?> - So Fab Studio</title>
     <link rel="canonical" href="https://www.sofabstudio.com/projects.html">
     <meta property="og:url" content="https://www.sofabstudio.com/projects.html">
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image.jpg">
+    <meta name="twitter:image" content="<?php echo htmlspecialchars($projectdata->getData()["fotoInterna"]["url"], ENT_QUOTES, 'UTF-8'); ?>">
     <meta name="description" content="Sono Fabrizio, creo contenuti, gestisco canali social
 e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e professionisti.">
     <meta property="og:description" content="Con me aziende e professionisti migliorano la loro comunicazione e presenza online. Branding, Comunicazione e Social Media.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="So Fab Studio - Comunicazione &amp; Marketing">
-    <meta property="og:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image.jpg">
-    <link rel="apple-touch-icon" type="image/jpeg" sizes="180x180" href="assets/img/180x180.jpg">
-    <link rel="icon" type="image/jpeg" sizes="16x16" href="assets/img/16X16.jpg">
-    <link rel="icon" type="image/jpeg" sizes="16x16" href="assets/img/16X16.jpg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/jpeg" sizes="32x32" href="assets/img/32X32.jpg">
-    <link rel="icon" type="image/jpeg" sizes="32x32" href="assets/img/32X32.jpg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/jpeg" sizes="180x180" href="assets/img/180x180.jpg">
-    <link rel="icon" type="image/jpeg" sizes="192x192" href="assets/img/192x192.jpg">
-    <link rel="icon" type="image/jpeg" sizes="512x512" href="assets/img/512x512.jpg">
+    <meta property="og:title" content="So Fab Studio - Comunicazione & Marketing">
+    <meta property="og:image" content="<?php echo htmlspecialchars($projectdata->getData()["fotoInterna"]["url"], ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta property="og:image" content="<?php echo htmlspecialchars($projectdata->getData()["fotoInterna"]["url"], ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/16X16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/16X16.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/32X32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/32X32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/512x512.png">
+
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Palmer%20Lake%20Print.css">
     <link rel="stylesheet" href="assets/css/Peanut%20Donuts.css">
@@ -75,13 +83,14 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
             <div class="container">
                 <div class="row">
                     <div class="col-6 col-sm-6 col-md-6 col-lg align-self-center" style="padding-left:0px;padding-right:0px;"><a class="navbar-brand d-flex align-items-center" href="/"><img src="assets/img/Logo.png" style="max-width:10rem;height:auto;"></a></div>
-                    <div class="col-6 col-sm-6 col-md-6 col-lg d-flex justify-content-end align-self-center" style="padding-right:0px;padding-left:0px;"><button data-bs-toggle="collapse" data-bs-target="#navcol-2" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg d-flex justify-content-end align-self-center" style="padding-right:0px;padding-left:0px;">
+                    <button data-bs-toggle="collapse" data-bs-target="#navcol-2" class="navbar-toggler d-none"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="navcol-1">
                             <ul class="navbar-nav">
-                                <li class="nav-item"><a class="nav-link active" href="#chi-sono" style="padding-left:0;">chi sono</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#progetti" style="color:var(--bs-navbar-active-color);">progetti</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#il-mio-network" style="color:var(--bs-navbar-active-color);">network</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#contatti" style="color:var(--bs-navbar-active-color);">contatti</a></li>
+                                <li class="nav-item"><a class="nav-link active" href="https://www.sofabstudio.com/#chi-sono" style="padding-left:0;">chi sono</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://www.sofabstudio.com/#progetti" style="color:var(--bs-navbar-active-color);">progetti</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://www.sofabstudio.com/#il-mio-network" style="color:var(--bs-navbar-active-color);">network</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://www.sofabstudio.com/#contatti" style="color:var(--bs-navbar-active-color);">contatti</a></li>
                             </ul>
                             <ul class="list-inline ms-auto" style="margin-bottom:1px;padding:0px;padding-top:0px;padding-right:0px;padding-left:0px;padding-bottom:0px;">
                                 <li class="list-inline-item list-inline-item list-inline-item list-inline-item me-4"><a href="https://www.linkedin.com/in/fabriziosomma/" style="text-decoration:none;color:#000000;"><svg class="bi bi-linkedin" fill="currentColor" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"></path></svg></a></li>

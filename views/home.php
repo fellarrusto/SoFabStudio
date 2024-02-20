@@ -23,7 +23,7 @@ $projects = new Projects($url, $token);
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>So Fab Studio - Comunicazione &amp; Social Media</title>
+    <title>So Fab Studio - Comunicazione & Social Media</title>
     <link rel="canonical" href="https://www.sofabstudio.com/">
     <meta property="og:url" content="https://www.sofabstudio.com/">
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
@@ -31,12 +31,22 @@ $projects = new Projects($url, $token);
     <meta name="robots" content="index,follow">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image.jpg">
+    
     <meta name="description" content="Sono Fabrizio, creo contenuti, gestisco canali social
 e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e professionisti.">
-    <meta property="og:description" content="Con me aziende e professionisti migliorano la loro comunicazione e presenza online. Branding, Comunicazione e Social Media.">
+    <meta property="og:description" content="Con me aziende e professionisti migliorano la loro comunicazione e presenza online.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="So Fab Studio - Comunicazione &amp; Marketing">
+    <meta property="og:title" content="So Fab Studio - Comunicazione & Marketing">
     <meta property="og:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta property="og:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image-whatsapp.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -45,14 +55,14 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
             "url": "https://www.sofabstudio.com"
         }
     </script>
-    <link rel="apple-touch-icon" type="image/jpeg" sizes="180x180" href="assets/img/180x180.jpg">
-    <link rel="icon" type="image/jpeg" sizes="16x16" href="assets/img/16X16.jpg">
-    <link rel="icon" type="image/jpeg" sizes="16x16" href="assets/img/16X16.jpg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/jpeg" sizes="32x32" href="assets/img/32X32.jpg">
-    <link rel="icon" type="image/jpeg" sizes="32x32" href="assets/img/32X32.jpg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/jpeg" sizes="180x180" href="assets/img/180x180.jpg">
-    <link rel="icon" type="image/jpeg" sizes="192x192" href="assets/img/192x192.jpg">
-    <link rel="icon" type="image/jpeg" sizes="512x512" href="assets/img/512x512.jpg">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/16X16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/16X16.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/32X32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/32X32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/512x512.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Palmer%20Lake%20Print.css">
     <link rel="stylesheet" href="assets/css/Peanut%20Donuts.css">
@@ -86,7 +96,7 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
                 <div class="row">
                     <div class="col-6 col-sm-6 col-md-6 col-lg align-self-center" style="padding-left:0px;padding-right:0px;"><a class="navbar-brand d-flex align-items-center" href="/"><img src="assets/img/Logo.png" style="max-width:10rem;height:auto;"></a></div>
                     <div class="col-6 col-sm-6 col-md-6 col-lg d-flex justify-content-end align-self-center" style="padding-right:0px;padding-left:0px;">
-                        <button data-bs-toggle="collapse" data-bs-target="#navcol-2" class="navbar-toggler" aria-expanded="false" aria-label="toggle navigation">
+                        <button data-bs-toggle="collapse" data-bs-target="#navcol-2" class="navbar-toggler d-none" aria-expanded="false" aria-label="toggle navigation">
                             <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navcol-2">
@@ -122,7 +132,7 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
     </div>
     <div class="container py-4 py-xl-0" id="servizi" style="padding-left: 0px;padding-right: 0px;width: 100vw;max-width: 100vw;margin-top: 0px;padding-top: 0px;">
         <div class="text-center text-white-50 bg-primary border rounded border-0 p-3" style="--bs-body-bg: #ffffff;">
-            <div class="row row-cols-2 row-cols-md-4" style="background-color: var(--bs-secondary-bg) !important; padding-left: 0 !important; padding-right: 0 !important;">
+            <div class="row row-cols-2 row-cols-md-4" style="background-color: var(--bs-secondary-bg) !important; padding-left: 0 !important; padding-right: 0 !important; padding-top: 18px;">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 align-self-center" style="padding: 0 !important;">
                     <div style="vertical-align: middle; text-align: center; width: 100%;">
                         <h2 class="display-4" style="color: #000000 !important; margin: auto; vertical-align: middle;">

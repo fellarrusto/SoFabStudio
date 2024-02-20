@@ -2,34 +2,44 @@
 <html data-bs-theme="light" lang="it">
 
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>So Fab Studio - Comunicazione &amp; Social Media</title>
-    <link rel="canonical" href="https://www.sofabstudio.com/projects.html">
-    <meta property="og:url" content="https://www.sofabstudio.com/projects.html">
+    <title>Errore 404 - So Fab Studio - Comunicazione & Social Media</title>
+    <link rel="canonical" href="https://www.sofabstudio.com/">
+    <meta property="og:url" content="https://www.sofabstudio.com/">
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image.jpg">
+    
     <meta name="description" content="Sono Fabrizio, creo contenuti, gestisco canali social
 e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e professionisti.">
-    <meta property="og:description" content="Con me aziende e professionisti migliorano la loro comunicazione e presenza online. Branding, Comunicazione e Social Media.">
+    <meta property="og:description" content="Con me aziende e professionisti migliorano la loro comunicazione e presenza online.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="So Fab Studio - Comunicazione &amp; Marketing">
+    <meta property="og:title" content="So Fab Studio - Comunicazione & Marketing">
     <meta property="og:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image.jpg">
-    <link rel="apple-touch-icon" type="image/jpeg" sizes="180x180" href="assets/img/180x180.jpg">
-    <link rel="icon" type="image/jpeg" sizes="16x16" href="assets/img/16X16.jpg">
-    <link rel="icon" type="image/jpeg" sizes="16x16" href="assets/img/16X16.jpg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/jpeg" sizes="32x32" href="assets/img/32X32.jpg">
-    <link rel="icon" type="image/jpeg" sizes="32x32" href="assets/img/32X32.jpg" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/jpeg" sizes="180x180" href="assets/img/180x180.jpg">
-    <link rel="icon" type="image/jpeg" sizes="192x192" href="assets/img/192x192.jpg">
-    <link rel="icon" type="image/jpeg" sizes="512x512" href="assets/img/512x512.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta property="og:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image-whatsapp.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/16X16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/16X16.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/32X32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/32X32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/512x512.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Palmer%20Lake%20Print.css">
     <link rel="stylesheet" href="assets/css/Peanut%20Donuts.css">
     <link rel="stylesheet" href="assets/css/Space%20Grotesk.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/Hero-Clean-images.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
     <link rel="stylesheet" href="assets/css/Portfolio-Gallery---Gabriela-Carvalho.css">
