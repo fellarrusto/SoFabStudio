@@ -14,6 +14,6 @@ if (array_key_exists($page, $allowedPages)) {
     include($allowedPages[$page]);
 } else {
     // Mostra una pagina di errore se la pagina richiesta non è valida o non è definita
-    echo "404 Page Not Found";
+    echo "404 Page Not Foundcapocchia";
 }
 ?>
