@@ -49,7 +49,7 @@ class Projects extends BaseComponent {
           <div class="foto-progetto"><img src="<?= htmlspecialchars($url) ?>" width="100%" alt="Mountains"></div>
           <div class="content">
               <h6 style="padding-top: -0px;font-family: 'Space Grotesk', sans-serif;text-decoration:  underline;"><?= htmlspecialchars($categoria) ?></h6>
-              <h3 style="font-family: 'Space Grotesk', sans-serif;font-size: x-large;"><strong><a href="?page=projects&id=<?= htmlspecialchars($id) ?>&project=<?= htmlspecialchars($slug) ?>" target="_blank"><?= htmlspecialchars($nome) ?></a></strong></h3>
+              <h3 style="font-family: 'Space Grotesk', sans-serif;font-size: x-large;"><strong><a href="?page=project&project=<?= htmlspecialchars($slug) ?>" target="_blank"><?= htmlspecialchars($nome) ?></a></strong></h3>
               <p style="font-family: 'Space Grotesk', sans-serif;font-size: small;"><?= htmlspecialchars($descrizioneBreve) ?></p>
           </div>
       </div>

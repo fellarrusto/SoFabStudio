@@ -1,4 +1,5 @@
 <?php
+require_once 'php/datastruct/ProjectData.php';
 require_once 'php/conf/config.php';
 
 $url = URL;
@@ -8,10 +9,8 @@ if(isset($_GET['project'])){
     $projectname = $_GET['project'];
 }
 
-if(isset($_GET['id'])){
-    $id = $_GET['id'];
-}
 
+$projectdata = new ProjectData($url, $token, $projectname);
 
 
 ?>
@@ -23,7 +22,7 @@ if(isset($_GET['id'])){
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>So Fab Studio - Comunicazione &amp; Social Media</title>
+    <title><?php echo $projectdata->getData()["nome"] ?> - So Fab Studio - Comunicazione &amp; Social Media</title>
     <link rel="canonical" href="https://www.sofabstudio.com/projects.html">
     <meta property="og:url" content="https://www.sofabstudio.com/projects.html">
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
@@ -96,10 +95,10 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
         </div>
     </nav>
     <div class="container">
-        <div class="overlayWrapper"><img class="img-fluid" src="assets/img/forno--esterno-low-2.jpg" style="height: auto;width: 100%;aspect-ratio: 16/9;object-fit: cover;">
+        <div class="overlayWrapper"><img class="img-fluid" src="<?php echo $projectdata->getData()["fotoInterna"]["url"] ?>" style="height: auto;width: 100%;aspect-ratio: 16/9;object-fit: cover;">
             <div class="bottom-right"></div>
             <div class="bottom-left">
-                <h1 class="ccontainer" style="font-family: 'Space Grotesk', sans-serif;"><?php echo $projectname ?></h1>
+                <h1 class="ccontainer" style="font-family: 'Space Grotesk', sans-serif;"><?php echo $projectdata->getData()["nome"] ?></h1>
             </div>
             <div class="top-left"></div>
             <div class="top-right"></div>
@@ -112,13 +111,8 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
             <!--Photo Grid-->
             <div>
                 <!--Comment-->
-                <p class="rig-p" style="font-family: 'Space Grotesk', sans-serif;font-size: medium;">Descrizione del progetto<br><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                <div class="rig-row">
-                    <!--Comment-->
-                    <div class="rig-column"><img src="https://www.w3schools.com/w3images/wedding.jpg"><img src="https://www.w3schools.com/w3images/rocks.jpg"><img src="https://www.w3schools.com/w3images/falls2.jpg"><img src="https://www.w3schools.com/w3images/paris.jpg"><img src="https://www.w3schools.com/w3images/nature.jpg"><img src="https://www.w3schools.com/w3images/mist.jpg"><img src="https://www.w3schools.com/w3images/paris.jpg"></div>
-                    <div class="rig-column"><img src="https://www.w3schools.com/w3images/underwater.jpg"><img src="https://www.w3schools.com/w3images/ocean.jpg"><img src="https://www.w3schools.com/w3images/wedding.jpg"><img src="https://www.w3schools.com/w3images/mountainskies.jpg"><img src="https://www.w3schools.com/w3images/rocks.jpg"><img src="https://www.w3schools.com/w3images/underwater.jpg"></div>
-                    <div class="rig-column"><img src="https://www.w3schools.com/w3images/wedding.jpg"><img src="https://www.w3schools.com/w3images/rocks.jpg"><img src="https://www.w3schools.com/w3images/falls2.jpg"><img src="https://www.w3schools.com/w3images/paris.jpg"><img src="https://www.w3schools.com/w3images/nature.jpg"><img src="https://www.w3schools.com/w3images/mist.jpg"><img src="https://www.w3schools.com/w3images/paris.jpg"></div>
-                    <div class="rig-column"><img src="https://www.w3schools.com/w3images/underwater.jpg"><img src="https://www.w3schools.com/w3images/ocean.jpg"><img src="https://www.w3schools.com/w3images/wedding.jpg"><img src="https://www.w3schools.com/w3images/mountainskies.jpg"><img src="https://www.w3schools.com/w3images/rocks.jpg"><img src="https://www.w3schools.com/w3images/underwater.jpg"></div>
+                <div class="project-description">
+                    <?php echo $projectdata->getData()["descrizione"]["html"] ?>
                 </div>
             </div>
         </div>

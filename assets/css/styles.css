@@ -154,3 +154,8 @@ a {
   color: inherit !important;
   text-decoration: none !important;
 }
+
+.project-description p{
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: medium !important;
+}

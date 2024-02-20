@@ -85,7 +85,10 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
             <div class="container">
                 <div class="row">
                     <div class="col-6 col-sm-6 col-md-6 col-lg align-self-center" style="padding-left:0px;padding-right:0px;"><a class="navbar-brand d-flex align-items-center" href="/"><img src="assets/img/Logo.png" style="max-width:10rem;height:auto;"></a></div>
-                    <div class="col-6 col-sm-6 col-md-6 col-lg d-flex justify-content-end align-self-center" style="padding-right:0px;padding-left:0px;"><button data-bs-toggle="collapse" data-bs-target="#navcol-2" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg d-flex justify-content-end align-self-center" style="padding-right:0px;padding-left:0px;">
+                        <button data-bs-toggle="collapse" data-bs-target="#navcol-2" class="navbar-toggler" aria-expanded="false" aria-label="toggle navigation">
+                            <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+                        </button>
                         <div class="collapse navbar-collapse" id="navcol-2">
                             <ul class="navbar-nav">
                                 <li class="nav-item"><a class="nav-link active" href="#chi-sono" style="padding-left:0;">chi sono</a></li>

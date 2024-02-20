@@ -2,7 +2,7 @@
 // Definisci l'elenco delle pagine consentite
 $allowedPages = [
     'home' => 'views/home.php',
-    'projects' => 'views/projects.php',
+    'project' => 'views/project.php',
 ];
 
 // Ottieni il parametro 'page' dall'URL
@@ -14,6 +14,6 @@ if (array_key_exists($page, $allowedPages)) {
     include($allowedPages[$page]);
 } else {
     // Mostra una pagina di errore se la pagina richiesta non è valida o non è definita
-    echo "404 Page Not Foundcapocchia";
+    include('views/404.php');
 }
 ?>
