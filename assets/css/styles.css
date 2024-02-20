@@ -145,3 +145,12 @@
 .collaborators-text-small{
   font-size: 10pt;
 }
+
+.collaborator a{
+  text-decoration: none;
+} 
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}

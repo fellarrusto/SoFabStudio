@@ -23,12 +23,15 @@ class Projects extends BaseComponent {
                                       progettis {
                                         nome
                                         id
-                                        descrizione
+                                        descrizione {
+                                          html
+                                        }
                                         descrizioneBreve
                                         foto {
                                           url
                                         }
                                         categoria
+                                        slug
                                       }
                                     }",
             "variables" => null,
@@ -39,14 +42,14 @@ class Projects extends BaseComponent {
         return $result["data"]["progettis"]; // Specify data example ["collaborators"];
     }
 
-    function getTemplate($id, $nome, $categoria, $descrizioneBreve, $url) {
+    function getTemplate($id, $nome, $categoria, $descrizioneBreve, $url, $slug) {
       ob_start(); // Avvia l'output buffering
       ?>
       <div id="project-<?= htmlspecialchars($id) ?>" class="column">
           <div class="foto-progetto"><img src="<?= htmlspecialchars($url) ?>" width="100%" alt="Mountains"></div>
           <div class="content">
               <h6 style="padding-top: -0px;font-family: 'Space Grotesk', sans-serif;text-decoration:  underline;"><?= htmlspecialchars($categoria) ?></h6>
-              <h3 style="font-family: 'Space Grotesk', sans-serif;font-size: x-large;"><strong><?= htmlspecialchars($nome) ?></strong></h3>
+              <h3 style="font-family: 'Space Grotesk', sans-serif;font-size: x-large;"><strong><a href="?page=projects&id=<?= htmlspecialchars($id) ?>&project=<?= htmlspecialchars($slug) ?>" target="_blank"><?= htmlspecialchars($nome) ?></a></strong></h3>
               <p style="font-family: 'Space Grotesk', sans-serif;font-size: small;"><?= htmlspecialchars($descrizioneBreve) ?></p>
           </div>
       </div>
@@ -56,7 +59,7 @@ class Projects extends BaseComponent {
 
   function render(){
     foreach ($this->data as $d) {
-      echo $this->getTemplate($d["id"], $d["nome"], $d["categoria"], $d["descrizioneBreve"], $d["foto"]["url"]);
+      echo $this->getTemplate($d["id"], $d["nome"], $d["categoria"], $d["descrizioneBreve"], $d["foto"]["url"], $d["slug"]);
     }
   }
 
