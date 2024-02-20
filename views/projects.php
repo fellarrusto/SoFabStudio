@@ -6,13 +6,12 @@ $token = TOKEN;
 
 if(isset($_GET['project'])){
     $projectname = $_GET['project'];
-    echo $projectname;
 }
 
 if(isset($_GET['id'])){
     $id = $_GET['id'];
-    echo $id;
 }
+
 
 
 ?>
@@ -100,7 +99,7 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
         <div class="overlayWrapper"><img class="img-fluid" src="assets/img/forno--esterno-low-2.jpg" style="height: auto;width: 100%;aspect-ratio: 16/9;object-fit: cover;">
             <div class="bottom-right"></div>
             <div class="bottom-left">
-                <h1 class="ccontainer" style="font-family: 'Space Grotesk', sans-serif;">Lettera32</h1>
+                <h1 class="ccontainer" style="font-family: 'Space Grotesk', sans-serif;"><?php echo $projectname ?></h1>
             </div>
             <div class="top-left"></div>
             <div class="top-right"></div>
