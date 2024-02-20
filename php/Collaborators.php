@@ -47,7 +47,7 @@ class Collaborators extends BaseComponent {
           <div class="card border-0 shadow-none" style="background: transparent;">
               <div class="collaborators-text card-body d-flex flex-column p-0">
                   <?php if ($img): ?>
-                  <img class="rounded border mb-3" src="<?= htmlspecialchars($img) ?>" style="width:100%; aspect-ratio:1;">
+                  <img class="rounded mb-3" src="<?= htmlspecialchars($img) ?>" style="width:100%; aspect-ratio:1;">
                   <?php endif; ?>
                   <h5 class="fw-bold mb-0"><?= htmlspecialchars($name) ?></h5>
                   <p class="text-muted mb-2"><?= htmlspecialchars($role) ?></p>
