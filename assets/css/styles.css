@@ -159,3 +159,7 @@ a {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: medium !important;
 }
+
+.nav-item a{
+  color: #000 !important;
+}
