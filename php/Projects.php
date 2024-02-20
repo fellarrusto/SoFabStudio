@@ -46,7 +46,7 @@ class Projects extends BaseComponent {
       ob_start(); // Avvia l'output buffering
       ?>
       <div id="project-<?= htmlspecialchars($id) ?>" class="column">
-          <div class="foto-progetto"><img src="<?= htmlspecialchars($url) ?>" width="100%" alt="Mountains"></div>
+          <div class="foto-progetto"><a href="?page=project&project=<?= htmlspecialchars($slug) ?>" target="_blank"><img src="<?= htmlspecialchars($url) ?>" width="100%" alt="Mountains"></a></div>
           <div class="content">
               <h6 style="padding-top: -0px;font-family: 'Space Grotesk', sans-serif;text-decoration:  underline;"><?= htmlspecialchars($categoria) ?></h6>
               <h3 style="font-family: 'Space Grotesk', sans-serif;font-size: x-large;"><strong><a href="?page=project&project=<?= htmlspecialchars($slug) ?>" target="_blank"><?= htmlspecialchars($nome) ?></a></strong></h3>
