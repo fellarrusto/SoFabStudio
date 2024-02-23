@@ -4,6 +4,9 @@
         <loc>https://www.sofabstudio.com/</loc>
     </url>
     <url>
-        <loc>https://www.sofabstudio.com/projects.html</loc>
+        <loc>https://www.sofabstudio.com/project?project=lettera32</loc>
+    </url>
+    <url>
+        <loc>https://www.sofabstudio.com/project?project=studiodentisticoromano</loc>
     </url>
 </urlset>

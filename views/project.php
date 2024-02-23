@@ -13,6 +13,7 @@ if(isset($_GET['project'])){
 $projectdata = new ProjectData($url, $token, $projectname);
 
 
+
 ?>
 
 
@@ -23,8 +24,8 @@ $projectdata = new ProjectData($url, $token, $projectname);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title><?php echo $projectdata->getData()["nome"] ?> - So Fab Studio</title>
-    <link rel="canonical" href="https://www.sofabstudio.com/projects.html">
-    <meta property="og:url" content="https://www.sofabstudio.com/projects.html">
+    <link rel="canonical" href="https://www.sofabstudio.com/project">
+    <meta property="og:url" content="https://www.sofabstudio.com/project">
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
