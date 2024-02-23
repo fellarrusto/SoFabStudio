@@ -403,6 +403,8 @@ figure {
 
 img, svg {
   vertical-align: middle;
+  max-width: 100%;
+  height: auto;
 }
 
 table {
