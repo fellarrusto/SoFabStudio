@@ -6,10 +6,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = strip_tags(trim($_POST["message"]));
 
     // Specificare qui l'indirizzo email dove vuoi ricevere i messaggi
-    $to = "filippoleonelli1@gmail.com";
+    $to = "info@sofabstudio.com";
 
     // Impostare l'oggetto dell'email
-    $subject = "Nuovo messaggio dal form di contatto da $name";
+    $subject = "SoFabStudio FORM MESSAGE $name";
 
     // Costruire il corpo dell'email
     $email_content = "Nome: $name\n";
