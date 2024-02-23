@@ -230,7 +230,7 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
                 </div>
                 <div class="col-md-6 col-lg-5 col-xl-4">
                     <div>
-                        <form class="p-3 p-xl-4" method="post">
+                        <form class="p-3 p-xl-4" method="post"  action="php/actions/sendmail.php">
                             <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="nome" style="font-family: 'Space Grotesk', sans-serif;"></div>
                             <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="email" style="font-family: 'Space Grotesk', sans-serif;"></div>
                             <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6" placeholder="messaggio" style="font-family: 'Space Grotesk', sans-serif;"></textarea></div>
@@ -263,6 +263,32 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
     <script src="assets/js/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/js/bs-init.js"></script>
     <script src="assets/js/js/offset-header.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector('form').addEventListener('submit', function(e) {
+                e.preventDefault(); // Impedisce il normale invio del form
+
+                var formData = new FormData(this); // Raccoglie i dati del form
+
+                // Esegue la chiamata AJAX
+                fetch('php/actions/sendmail.php', {
+                    method: 'POST',
+                    body: formData,
+                })
+                .then(response => response.text())
+                .then(data => {
+                    // Gestisce la risposta dal server
+                    alert('Messaggio inviato con successo!');
+                    // Qui puoi anche pulire il form o reindirizzare l'utente
+                })
+                .catch(error => {
+                    // Gestisce eventuali errori
+                    console.error('Errore:', error);
+                    alert('Si è verificato un errore durante l\'invio del messaggio.');
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
