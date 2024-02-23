@@ -122,7 +122,7 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
             <div>
                 <!--Comment-->
                 <div class="project-description">
-                    <?php echo $projectdata->getData()["descrizione"]["html"] ?>
+                    <?php echo html_entity_decode($projectdata->getData()["descrizione"]["html"]) ?>
                 </div>
             </div>
         </div>
