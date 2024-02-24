@@ -89,7 +89,7 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
     <link rel="stylesheet" href="assets/css/Team-icons.css">
 </head>
 
-<body style="background: #FFB900;font-family: 'Peanut Donuts';padding-top: 150px;">
+<body style="background: #FFB900;font-family: 'Peanut Donuts';padding-top: 120px;">
     <nav class="navbar navbar-expand-md fixed-top bg-body" id="header" style="width: 100vw;background: #FFB900 !important;">
         <div class="container">
             <div class="container">
@@ -158,7 +158,7 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
             <div class="col-md-6 d-md-flex align-self-start align-items-md-center">
                 <div style="max-width: 100%;/*padding: 48px;*/">
                     <h2 class="text-uppercase fw-bold" id="i-miei-progetti" style="font-size: xx-large;color: var(--bs-emphasis-color);">i miei progetti</h2>
-                    <p class="my-3" style="font-family: 'Space Grotesk', sans-serif;/*font-size: x-large;*/color: var(--bs-emphasis-color);">Per 6 anni ho lavorato a Milano per Studiolabo come Social Media Manager.<br><br>Ho gestito la comunicazione dei progetti Fuorisalone.it e Brera Design District.<br><br>Oggi lavoro come libero professionista.</p>
+                    <p class="my-3" style="font-family: 'Space Grotesk', sans-serif;/*font-size: x-large;*/color: var(--bs-emphasis-color);">Per 6 anni ho lavorato a Milano per <a href="https://studiolabo.it/" target="_blank"><b>Studiolabo</b></a> come Social Media Manager.<br><br>Ho gestito la comunicazione dei progetti <a href="https://www.fuorisalone.it/" target="_blank"><b>Fuorisalone.it</b></a> e <a href="https://www.breradesigndistrict.it/" target="_blank"><b>Brera Design District</b></a>.<br><br>Oggi lavoro come libero professionista.</p>
                 </div>
             </div>
         </div>

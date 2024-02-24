@@ -61,7 +61,7 @@ e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e p
     <link rel="stylesheet" href="assets/css/Team-icons.css">
 </head>
 
-<body style="background: #FFB900;font-family: 'Peanut Donuts';padding-top: 150px;">
+<body style="background: #FFB900;font-family: 'Peanut Donuts';padding-top: 120px;">
     <nav class="navbar navbar-expand-md fixed-top bg-body" id="header" style="width: 100vw;background: #FFB900 !important;">
         <div class="container">
             <div class="container">
