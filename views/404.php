@@ -3,30 +3,38 @@
 
 <head>
 <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Errore 404 - So Fab Studio - Comunicazione & Social Media</title>
-    <link rel="canonical" href="https://www.sofabstudio.com/">
-    <meta property="og:url" content="https://www.sofabstudio.com/">
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index,follow">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image.jpg">
-    
-    <meta name="description" content="Sono Fabrizio, creo contenuti, gestisco canali social
-e campagne pubblicitarie per migliorare la comunicazione digitale di aziende e professionisti.">
-    <meta property="og:description" content="Con me aziende e professionisti migliorano la loro comunicazione e presenza online.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="So Fab Studio - Comunicazione & Marketing">
-    <meta property="og:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>Errore 404 - Pagina Non Trovata | So Fab Studio</title>
+<meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
+<meta name="robots" content="noindex,follow">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image.jpg">
+<meta name="description" content="La pagina che stai cercando non è stata trovata. Potresti essere interessato a tornare alla nostra homepage o a cercare il contenuto che ti serve.">
+<meta property="og:description" content="Oops! Non siamo riusciti a trovare la pagina che stavi cercando. Esplora il nostro sito per trovare ciò di cui hai bisogno.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Errore 404 - Pagina Non Trovata | So Fab Studio">
+<meta property="og:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 
-    <meta property="og:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image-whatsapp.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="400" />
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "name": "So Fab Studio - Comunicazione & Marketing",
+  "url": "https://www.sofabstudio.com",
+  "logo": "https://www.sofabstudio.com/assets/img/Logo.png",
+  "sameAs": [
+    "https://www.facebook.com/fabriziosommaa/",
+    "https://www.instagram.com/sofabstudio/",
+    "https://www.linkedin.com/in/fabriziosomma",
+    "https://www.tiktok.com/@sofabstudio"
+  ]
+}
+</script>
+
+
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/180x180.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/16X16.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/16X16.png" media="(prefers-color-scheme: dark)">

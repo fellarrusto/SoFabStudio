@@ -21,36 +21,33 @@ $projectdata = new ProjectData($url, $token, $projectname);
 <html data-bs-theme="light" lang="it">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title><?php echo $projectdata->getData()["nome"] ?> - So Fab Studio</title>
-    <link rel="canonical" href="https://www.sofabstudio.com/project?project=<?= urlencode($projectName) ?>">
-    <meta property="og:url" content="https://www.sofabstudio.com/project?project=<?= urlencode($projectName) ?>">
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index,follow">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="<?php echo htmlspecialchars($projectdata->getData()["fotoInterna"]["url"], ENT_QUOTES, 'UTF-8'); ?>">
-    <meta name="description" content="<?= htmlspecialchars($descrizioneBreve) ?>
-    <meta property="og:description" content="<?= htmlspecialchars($descrizioneBreve, ENT_QUOTES, 'UTF-8') ?>">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="<?php echo $projectdata->getData()["nome"] ?> - So Fab Studio">
-    <meta property="og:image" content="<?php echo htmlspecialchars($projectdata->getData()["fotoInterna"]["url"], ENT_QUOTES, 'UTF-8'); ?>">
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+   <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title><?php echo $projectdata->getData()["nome"] ?> - So Fab Studio</title>
+<link rel="canonical" href="https://www.sofabstudio.com/project?project=<?php echo $projectdata->getData()["nome"] ?>">
+<meta property="og:url" content="https://www.sofabstudio.com/project?project=<?php echo $projectdata->getData()["nome"] ?>">
+<meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
+<meta name="robots" content="index,follow">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="<?= htmlspecialchars($descrizioneBreve) ?>">
+<meta property="og:description" content="<?= htmlspecialchars($descrizioneBreve) ?>">
+<meta property="og:type" content="website">
+<meta property="og:title" content="<?php echo $projectdata->getData()["nome"] ?> - So Fab Studio">
+<meta property="og:image" content="<?php echo $projectdata->getData()["fotoInterna"]["url"] ?>">
+<meta property="og:image:type" content="image/jpeg"> 
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:image" content="<?php echo $projectdata->getData()["fotoInterna"]["url"] ?>">
 
-    <meta property="og:image" content="<?php echo htmlspecialchars($projectdata->getData()["fotoInterna"]["url"], ENT_QUOTES, 'UTF-8'); ?>">
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="400" />
-
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "CreativeWork",
-  "name": "<?php echo $projectdata->getData()["nome"] ?> - So Fab Studio",
-  "url": "https://www.sofabstudio.com/project?project=<?= urlencode($projectName) ?>"
- }
+  "name": "<?php echo $projectdata->getData()["nome"] ?>- So Fab Studio",
+  "url": "https://www.sofabstudio.com/project?project=<?php echo $projectdata->getData()["nome"] ?>"
+}
 </script>
+
 
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/180x180.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/16X16.png">
