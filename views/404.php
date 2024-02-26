@@ -7,6 +7,7 @@
 <title>Errore 404 - Pagina Non Trovata | So Fab Studio</title>
 <meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
 <meta name="robots" content="noindex,follow">
+<meta name="googlebot" content="noindex, follow">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://www.sofabstudio.com/assets/img/sofabstudio-og-image.jpg">
 <meta name="description" content="La pagina che stai cercando non è stata trovata. Potresti essere interessato a tornare alla nostra homepage o a cercare il contenuto che ti serve.">
@@ -17,6 +18,8 @@
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
+<meta name="content-language" content="it">
+
 
 <script type="application/ld+json">
 {

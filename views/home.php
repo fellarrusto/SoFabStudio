@@ -38,6 +38,12 @@ $projects = new Projects($url, $token);
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
+<meta name="google-site-verification" content="8kaM8s6wE72UXuJU8rHLzhh-HChGrZWyATqdUgD2EDQ" />
+<meta name="content-language" content="it">
+<meta name="googlebot" content="index, follow">
+
+
+
 
 <script type="application/ld+json">
 {

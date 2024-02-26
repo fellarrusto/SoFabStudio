@@ -38,6 +38,10 @@ $projectdata = new ProjectData($url, $token, $projectname);
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:image" content="<?php echo $projectdata->getData()["fotoInterna"]["url"] ?>">
+<meta name="content-language" content="it">
+<meta name="googlebot" content="index, follow">
+
+
 
 <script type="application/ld+json">
 {
