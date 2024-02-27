@@ -18,7 +18,7 @@ $projectdata = new ProjectData($url, $token, $projectname);
 
 
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="it">
+<html data-bs-theme="light" lang="it" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
 <head>
    <meta charset="utf-8">

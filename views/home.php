@@ -241,6 +241,7 @@ $projects = new Projects($url, $token);
                             <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="nome" style="font-family: 'Space Grotesk', sans-serif;"></div>
                             <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="email" style="font-family: 'Space Grotesk', sans-serif;"></div>
                             <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6" placeholder="messaggio" style="font-family: 'Space Grotesk', sans-serif;"></textarea></div>
+                            <div class="mb-3"  style="display:none;"><input type="text" name="lastname" id="lastname-h" value="" /></div>
                             <div><button class="btn btn-primary d-block w-100" type="submit" style="font-family: 'Space Grotesk', sans-serif;background: #FFB0B5;color: var(--bs-emphasis-color);border-radius: 35px;border: 3px outset #FBECE2 ;"><strong>Invia</strong></button></div>
                         </form>
                     </div>
@@ -282,16 +283,22 @@ $projects = new Projects($url, $token);
                     method: 'POST',
                     body: formData,
                 })
-                .then(response => response.text())
+                .then(response => {
+                    if (!response.ok) {
+                        // Se lo status code non è 2xx, lancia un errore con lo status
+                        throw new Error('Errore nel server: ' + response.status);
+                    }
+                    return response.text();
+                })
                 .then(data => {
                     // Gestisce la risposta dal server
                     alert('Messaggio inviato con successo!');
                     // Qui puoi anche pulire il form o reindirizzare l'utente
                 })
                 .catch(error => {
-                    // Gestisce eventuali errori
+                    // Gestisce eventuali errori, inclusi quelli di status HTTP
                     console.error('Errore:', error);
-                    alert('Si è verificato un errore durante l\'invio del messaggio.');
+                    alert('Si è verificato un errore durante l\'invio del messaggio: ' + error.message);
                 });
             });
         });
